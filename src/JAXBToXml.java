@@ -5,8 +5,6 @@
  */
 
 import java.io.File;
-import java.util.ArrayList;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -22,7 +20,7 @@ public class JAXBToXml {
         Book sherlock = new Book("The Adventures of Sherlock Holmes", "Genius uses " +
                 "observation and reason to solve crimes", "Arthur Conan Doyle", 339);
         Book twentyThousandLeagues = new Book("Twenty Thousand Leagues under the Sea", "Dr. Aronnax meets Capt. Nemo " +
-                "and this amazing submarine, the Nautilus", "Jules Verne", 394);
+                "and his amazing submarine, the Nautilus", "Jules Verne", 394);
 
         // Place Books on Shelf
         myShelf.placeBookOnShelf(sherlock);

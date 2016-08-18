@@ -5,9 +5,11 @@
  */
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
-//Below statement means that class "Country.java" is the root-element of our example
+//Below statement means that class "Book.java" is the root-element of our example
 @XmlRootElement(namespace = "Book")
+@XmlType(propOrder = {"title", "author", "description", "length"})
 public class Book {
 
     private String title;
